@@ -27,7 +27,8 @@
     "typecheck": "./node_modules/.bin/flow check",
     "verify": "npm test && npm run typecheck && npm run lint",
     "preversion": "npm run verify",
-    "prepublish": "gulp release"
+    "prepublish": "gulp release",
+    "build": "gulp release"
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
