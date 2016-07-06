@@ -26,7 +26,7 @@ gulp.task('watch-develop-bundle', browserifyCreator(true, {development: true}, I
 // folder is populated with react-infinite.js and
 // react-infinite.min.js, while the build folder is
 // provided with a copy of the source transpiled to ES5.
-gulp.task('release', ['cleanly-build-bundle'], function() {
+gulp.task('release', function() {
   // Transpile CommonJS files to ES5 with React's tools.
   gulp.src(['./src/**/*.js', './src/**/*.jsx'])
       .pipe(babel())
